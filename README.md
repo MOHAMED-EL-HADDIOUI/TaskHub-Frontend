@@ -1,4 +1,6 @@
 # **TaskHub**
+![Uploading logo.png…]()
+
 
 TaskHub est une application de gestion de projets et de tâches, permettant aux utilisateurs de suivre les projets, d'attribuer des tâches et de collaborer efficacement. Ce projet intègre une API sécurisée avec des fonctionnalités avancées pour la gestion des utilisateurs, des projets et des tâches.
 
