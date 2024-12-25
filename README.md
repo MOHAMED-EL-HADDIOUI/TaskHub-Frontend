@@ -131,5 +131,5 @@ Le projet **TaskHub** vise à simplifier la gestion des projets en offrant une p
 ## **Auteurs**
 
 - **[MOHAMED EL HADDIOUI]**
-- Contact : [mohamedelhaddioui99@exemple.com](mailto:mohamedelhaddioui99@exemple.com)
+- Contact : [mohamedelhaddioui99@gmail.com](mailto:mohamedelhaddioui99@gmail.com)
 
