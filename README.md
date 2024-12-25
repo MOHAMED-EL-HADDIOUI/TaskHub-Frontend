@@ -1,5 +1,5 @@
 # **TaskHub**
-![Uploading logo.png…]()
+![logo](https://github.com/user-attachments/assets/cfd0f1e8-8f69-4ffc-b296-44c69a311754)
 
 
 TaskHub est une application de gestion de projets et de tâches, permettant aux utilisateurs de suivre les projets, d'attribuer des tâches et de collaborer efficacement. Ce projet intègre une API sécurisée avec des fonctionnalités avancées pour la gestion des utilisateurs, des projets et des tâches.
@@ -126,9 +126,6 @@ Le projet **TaskHub** vise à simplifier la gestion des projets en offrant une p
 
 2. **Performances** :
     - L'utilisation de Django et React garantit une gestion efficace des données et des interfaces utilisateur modernes.
-    - Prévoir l'optimisation des requêtes SQL avec des indices dans la base de données.
-
-
 ---
 
 ## **Auteurs**
