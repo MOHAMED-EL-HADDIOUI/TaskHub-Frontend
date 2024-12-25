@@ -34,11 +34,15 @@ export function LoginForm() {
 
             const data = await response.json();
             if (data.access) {
-                localStorage.setItem('auth_token', data.access); // Store the token in localStorage
-                navigate('/dashboard'); // Redirect to dashboard
+                // Save the token to localStorage
+                localStorage.setItem('auth_token', data.access);
+
+                // Redirect to the dashboard after successful login
+                navigate('/dashboard');  // Redirect to dashboard
             } else {
                 throw new Error('Token not received');
             }
+
         } catch (err: any) {
             setError(err.message);
         }

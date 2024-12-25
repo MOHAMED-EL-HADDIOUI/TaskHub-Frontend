@@ -10,10 +10,40 @@ export function Header() {
   const goToProfil= ()=>{
     navigate('/profil'); // Redirect to dashboard
   }
-  const logOut= ()=>{
-    localStorage.removeItem('auth_token');
-    navigate('/auth'); // Redirect to dashboard
-  }
+  const logOut = async () => {
+    try {
+      const token = localStorage.getItem('auth_token');
+      if (!token) {
+        console.error("No token found in localStorage");
+        return;
+      }
+
+      const response = await fetch('http://localhost:8000/logout/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`,  // En-tête Authorization avec le jeton
+        },
+      });
+
+      if (response.ok) {
+        // Suppression du jeton et redirection
+        localStorage.removeItem('auth_token');
+        navigate('/auth');
+      } else {
+        localStorage.removeItem('auth_token');
+        navigate('/auth');
+        const errorData = await response.json();
+        console.error("Error during logout", errorData);
+      }
+    } catch (error) {
+      console.error("Error during logout", error);
+    }
+  };
+
+
+
+
   return (
     <header className="bg-white border-b px-6 py-4">
       <div className="flex justify-between items-center">

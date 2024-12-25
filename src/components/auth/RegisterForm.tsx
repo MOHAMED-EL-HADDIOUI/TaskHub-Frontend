@@ -33,7 +33,7 @@ export function RegisterForm() {
 
             const data = await response.json();
             alert('Registration successful');
-            navigate('/login'); // Redirect to login page after successful registration
+            navigate('/auth'); // Redirect to login page after successful registration
         } catch (err: any) {
             setError(err.message || 'An error occurred during registration');
         }

@@ -11,7 +11,7 @@ const Auth = () => {
           <div className="text-center mb-8">
             <img src={"/logo.png"} alt="Logo" />
             <p className="text-gray-600 mt-2">
-              {isLogin ? 'Sign in to access your tasks' : 'Get started with TaskMaster'}
+              {isLogin ? 'Sign in to access your TaskHub' : 'Get started with TaskHub'}
             </p>
           </div>
 
